@@ -68,12 +68,9 @@ RUN zypper -n install \
     poppler-tools \
     libxml2-tools \
     cmake-full \
+    R-base \
     cmake 
 RUN ldconfig -v
-
-ENV R_VERSION=4.1.0
-RUN curl -O https://cdn.rstudio.com/r/opensuse-152/pkgs/R-${R_VERSION}-1-1.x86_64.rpm
-RUN zypper --no-gpg-checks install R-${R_VERSION}-1-1.x86_64.rpm
 
 # Download GitHub Repos via HTTPS
 WORKDIR /home
