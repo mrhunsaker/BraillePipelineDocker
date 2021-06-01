@@ -169,7 +169,7 @@ RUN rm -rf /home/ImageMagick
 RUN rm -rf /home/leptonica
 RUN rm -rf /home/tesseract
 
-RUN R -e 'install.packages(c()dependencies=TRUE, repos='http://cran.rstudio.com/')'
+
 WORKDIR /home
 RUN /bin/zsh
 ENTRYPOINT [ "/bin/zsh" ]
