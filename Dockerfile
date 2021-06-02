@@ -58,14 +58,11 @@ RUN zypper -n install \
     libQt5Xml5 \
     libQt5Widgets5 \
     libQt5Test5 \
-    libqt5-qtbase \
     libQt5Script5 \
     libqt5-qtpaths \
     libqt5-qttools \
     libQt5Location5 \
     libqt5-qtscript \
-    libQt5XmlPatterns \
-    libqt5-qtx11extras \
     libqwt-qt5-6 \
     libQt5Svg5 \
     python3-qt5 \
@@ -171,7 +168,6 @@ RUN pip install --upgrade pip && \
     pytest \
     pytest-cov \
     flake8 \
-    seaborn \
     mypy \
     pyang \
     sphinx \
