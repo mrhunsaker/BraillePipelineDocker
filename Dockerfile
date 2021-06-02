@@ -5,6 +5,9 @@ ENV RUNNING_IN_DOCKER true
 
 # Fetch build dependencies
 RUN zypper addrepo https://download.opensuse.org/repositories/openSUSE:Leap:15.2:Update/standard/openSUSE:Leap:15.2:Update.repo
+RUN zypper addrepo https://download.opensuse.org/repositories/KDE:Qt5/openSUSE_Leap_15.2/KDE:Qt5.repo
+RUN zypper refresh
+RUN zypper -n  install -y libQt5Core5
 RUN zypper refresh && zypper -n install -t pattern \
     devel_C_C++ \
     devel_basis \
@@ -62,13 +65,30 @@ RUN zypper -n install \
     libQt5Script5 \
     libqt5-qtpaths \
     libqt5-qttools \
+    libQt5Location5 \
+    libqt5-qtscript \
+    libQt5XmlPatterns \
+    libqt5-qtx11extras \
+    libqwt-qt5-6 \
+    libQt5Svg5 \
+    python3-qt5 \
     libQt5Gui5 \
+    libqt5-linguist \
     apache-pdfbox \
     libboost_system1_66_0-32bit \
     poppler-tools \
     libxml2-tools \
     cmake-full \
     R-base \
+    ffmpeg-4 \
+    unpaper \
+    libqt5-qttools-doc \
+    libqt5-qtxmlpatterns \
+    ruby \
+    insighttoolkit  \
+    gtk3 \
+    protobuf \
+
     cmake 
 RUN ldconfig -v
 
@@ -151,6 +171,30 @@ RUN pip install --upgrade pip && \
     cython \
     ipython \
     jupyter \
+    SciPy \
+    scikit-learn \
+    scikit \
+    threadpoolctl \
+    joblib \
+    pandas 
+    seaborn \
+    memory-profiler \
+    pytest \
+    pytest-cov \
+    flake8 \
+    mypy \
+    pyang \
+    sphinx \
+    sphinx-gallery \
+    numpydoc \
+    sphinx-prompt \
+    datetime \
+    sympy \
+    meson \
+    concurrent.futures \
+    os \
+    glob \
+    time \
     pillow 
 
 WORKDIR /home
@@ -160,6 +204,9 @@ RUN rm -rf /home/ghostpdl
 RUN rm -rf /home/ImageMagick
 RUN rm -rf /home/leptonica
 RUN rm -rf /home/tesseract
+
+# Install Mini Magick Ruby wrapper for ImageMagick
+RUN gem "mini_magick"
 
 
 WORKDIR /home
