@@ -62,12 +62,6 @@ RUN zypper -n install \
     libqt5-qtpaths \
     libqt5-qttools \
     libQt5Location5 \
-    libqt5-qtscript \
-    libqwt-qt5-6 \
-    libQt5Svg5 \
-    python3-qt5 \
-    libQt5Gui5 \
-    libqt5-linguist \
     apache-pdfbox \
     libboost_system1_66_0-32bit \
     poppler-tools \
