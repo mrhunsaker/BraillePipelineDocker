@@ -154,24 +154,7 @@ RUN pip install --upgrade pip && \
     jupyter \
     SciPy \
     scikit-learn \
-    scikit \
-    threadpoolctl \
-    joblib \
     pandas \
-    memory-profiler \
-    pytest \
-    pytest-cov \
-    flake8 \
-    mypy \
-    pyang \
-    sphinx \
-    sphinx-gallery \
-    numpydoc \
-    sphinx-prompt \
-    datetime \
-    sympy \
-    meson \
-    concurrent.futures \
     os \
     glob \
     time \
