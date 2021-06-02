@@ -176,11 +176,12 @@ RUN pip install --upgrade pip && \
     scikit \
     threadpoolctl \
     joblib \
-    pandas 
+    pandas \
     memory-profiler \
     pytest \
     pytest-cov \
     flake8 \
+    seaborn \
     mypy \
     pyang \
     sphinx \
