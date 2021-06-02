@@ -77,15 +77,8 @@ RUN zypper -n install \
     libxml2-tools \
     cmake-full \
     R-base \
-    ffmpeg-4 \
     unpaper \
-    libqt5-qttools-doc \
-    libqt5-qtxmlpatterns \
     ruby \
-    insighttoolkit  \
-    gtk3 \
-    protobuf \
-
     cmake 
 RUN ldconfig -v
 
