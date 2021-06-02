@@ -155,9 +155,6 @@ RUN pip install --upgrade pip && \
     SciPy \
     scikit-learn \
     pandas \
-    os \
-    glob \
-    time \
     pillow 
 
 WORKDIR /home
@@ -167,10 +164,6 @@ RUN rm -rf /home/ghostpdl
 RUN rm -rf /home/ImageMagick
 RUN rm -rf /home/leptonica
 RUN rm -rf /home/tesseract
-
-# Install Mini Magick Ruby wrapper for ImageMagick
-RUN gem "mini_magick"
-
 
 WORKDIR /home
 RUN /bin/zsh
