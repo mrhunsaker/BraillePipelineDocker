@@ -147,16 +147,8 @@ RUN pip install --upgrade pip && \
     argparse-utils \
     matplotlib \
     pytesseract \
-    python-poppler \
-    python3-ghostscript \
-    py-pandoc \
     pylouis \
-    dots-editor \
     cython \
-    drawille \
-    rockart \
-    louisxml \
-    pybraille \
     ipython \
     jupyter \
     pillow 
