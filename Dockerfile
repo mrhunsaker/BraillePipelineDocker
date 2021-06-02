@@ -177,7 +177,6 @@ RUN pip install --upgrade pip && \
     threadpoolctl \
     joblib \
     pandas 
-    seaborn \
     memory-profiler \
     pytest \
     pytest-cov \
