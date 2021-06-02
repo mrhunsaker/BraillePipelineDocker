@@ -5,9 +5,6 @@ ENV RUNNING_IN_DOCKER true
 
 # Fetch build dependencies
 RUN zypper addrepo https://download.opensuse.org/repositories/openSUSE:Leap:15.2:Update/standard/openSUSE:Leap:15.2:Update.repo
-RUN zypper addrepo https://download.opensuse.org/repositories/KDE:Qt5/openSUSE_Leap_15.2/KDE:Qt5.repo
-RUN zypper refresh
-RUN zypper -n  install -y libQt5Core5
 RUN zypper refresh && zypper -n install -t pattern \
     devel_C_C++ \
     devel_basis \
