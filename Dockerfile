@@ -130,7 +130,7 @@ RUN ./configure && make && make install
 RUN /sbin/ldconfig -v
 
 # Install Language Files for Tesseract-OCR
-WORKDIR /home/.local/share/tessdata
+WORKDIR /usr/local/share/tessdata
 RUN wget https://github.com/tesseract-ocr/tessdata_best/blob/master/eng.traineddata\?raw=true -O eng.traineddata
 RUN wget https://github.com/tesseract-ocr/tessdata_best/blob/master/fra.traineddata\?raw=true -O fra.traineddata
 RUN wget https://github.com/tesseract-ocr/tessdata_best/blob/master/deu.traineddata\?raw=true -O deu.traineddata
