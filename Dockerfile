@@ -152,7 +152,10 @@ RUN pip install --upgrade pip && \
     cython \
     ipython \
     jupyter \
-    SciPy \
+    pandas \
+    Scipy \
+    glob2 \
+    scipy \
     scikit-learn \
     pandas \
     pillow 
