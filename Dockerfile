@@ -164,17 +164,10 @@ RUN pip install --upgrade pip && \
 
 # Set up MathJax and SRE
 RUN npm install -g npm@latest
-RUN npm install mathjax-full 
-RUN npm install google-closure-compiler 
-RUN npm install google-closure-library 
-RUN npm install xmldom-sre 
-RUN npm install wicked-good-xpath 
-RUN npm install  commander 
-RUN npm install xml-mapping 
-RUN npm install mathoid 
-RUN npm install MathJax-node 
-RUN npm install mathjax-node-sre 
-RUN npm install speech-rule-engine
+RUN npm install -g mathjax-full 
+RUN npm install -g MathJax-node 
+RUN npm install -g mathjax-node-sre 
+RUN npm install -g speech-rule-engine
 
 WORKDIR /home
 RUN rm -rf /home/liblouis
