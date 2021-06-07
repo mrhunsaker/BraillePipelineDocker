@@ -1,4 +1,4 @@
-FROM opensuse/leap:15.2
+FROM opensuse/leap:15.3
 
 LABEL maintainer="Hunsaker Consulting <hunsakerconsulting@gmail.com>"
 ENV RUNNING_IN_DOCKER true
@@ -70,6 +70,8 @@ RUN zypper -n install \
     R-base \
     unpaper \
     ruby \
+    nodejs14 \
+    npm14 \
     cmake 
 RUN ldconfig -v
 
@@ -158,7 +160,21 @@ RUN pip install --upgrade pip && \
     scipy \
     scikit-learn \
     pandas \
-    pillow 
+    Pillow 
+
+# Set up MathJax and SRE
+npm install -g npm@latest
+npm install mathjax-full 
+npm install google-closure-compiler 
+npm install google-closure-library 
+npm install xmldom-sre 
+npm install wicked-good-xpath 
+npm install  commander 
+npm install xml-mapping 
+npm install mathoid 
+npm install MathJax-node 
+npm install mathjax-node-sre 
+npm install speech-rule-engine
 
 WORKDIR /home
 RUN rm -rf /home/liblouis
