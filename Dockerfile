@@ -1,4 +1,4 @@
-FROM opensuse/leap:15.3
+FROM opensuse/leap:15.2
 
 LABEL maintainer="Hunsaker Consulting <hunsakerconsulting@gmail.com>"
 ENV RUNNING_IN_DOCKER true
