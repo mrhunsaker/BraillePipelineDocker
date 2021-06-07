@@ -163,11 +163,11 @@ RUN pip install --upgrade pip && \
     Pillow 
 
 # Set up MathJax and SRE
-RUN npm install -g npm@latest
-RUN npm install -g mathjax-full 
-RUN npm install -g MathJax-node 
-RUN npm install -g mathjax-node-sre 
-RUN npm install -g speech-rule-engine
+RUN npm install --global npm@latest -y
+RUN npm install --global mathjax-full -y
+RUN npm install --global MathJax-node -y
+RUN npm install --global mathjax-node-sre -y
+RUN npm install --global speech-rule-engine -y
 
 WORKDIR /home
 RUN rm -rf /home/liblouis
