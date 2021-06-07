@@ -163,6 +163,7 @@ RUN pip install --upgrade pip && \
     Pillow 
 
 # Set up MathJax and SRE
+WORKDIR /usr/src/app
 RUN npm install --global npm@latest -y
 RUN npm install --global mathjax-full -y
 RUN npm install --global MathJax-node -y
