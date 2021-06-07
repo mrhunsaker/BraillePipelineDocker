@@ -163,18 +163,18 @@ RUN pip install --upgrade pip && \
     Pillow 
 
 # Set up MathJax and SRE
-npm install -g npm@latest
-npm install mathjax-full 
-npm install google-closure-compiler 
-npm install google-closure-library 
-npm install xmldom-sre 
-npm install wicked-good-xpath 
-npm install  commander 
-npm install xml-mapping 
-npm install mathoid 
-npm install MathJax-node 
-npm install mathjax-node-sre 
-npm install speech-rule-engine
+RUN npm install -g npm@latest
+RUN npm install mathjax-full 
+RUN npm install google-closure-compiler 
+RUN npm install google-closure-library 
+RUN npm install xmldom-sre 
+RUN npm install wicked-good-xpath 
+RUN npm install  commander 
+RUN npm install xml-mapping 
+RUN npm install mathoid 
+RUN npm install MathJax-node 
+RUN npm install mathjax-node-sre 
+RUN npm install speech-rule-engine
 
 WORKDIR /home
 RUN rm -rf /home/liblouis
