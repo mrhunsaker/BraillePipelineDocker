@@ -166,7 +166,7 @@ RUN pip install --upgrade pip && \
 WORKDIR /usr/src/app
 RUN npm install --global npm@latest -y
 RUN npm install --global mathjax-full -y
-RUN npm install --global MathJax-node -y
+RUN npm install --global mathjax-node -y
 RUN npm install --global mathjax-node-sre -y
 RUN npm install --global speech-rule-engine -y
 
